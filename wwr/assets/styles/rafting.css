@@ -18,6 +18,10 @@ header {
 
 }
 
+body {
+    font-family: "Lato", serif;
+    font-weight: 400;
+}
 /* header img {
 
 } */
@@ -37,7 +41,8 @@ h1 {
     /* right: 5%; */
     color: var(--secondary-color);
     background: rgba(10, 110, 20, 0.5);
-    
+    font-family: "Poppins", serif;
+    font-weight: 400;
 }
 
 

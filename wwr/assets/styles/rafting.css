@@ -1,9 +1,9 @@
 :root {
     
-    --primary-color:#f6f5ae;
-    --secondary-color:#322214;
-    --accent1-color:#56cbf9;
-    --accent2-color: #0a6e14;
+    --primary-color:#FFFAF2;
+    --secondary-color:#000000;
+    --accent1-color:#115AAE;
+    --accent2-color: #9FC131;
 }
 
 * {
@@ -13,86 +13,35 @@
     max-width: 1080px;
 }
 
-header {
-    font-family: 'poppins';
-
-}
-
-body {
-    font-family: "Lato", serif;
-    font-weight: 400;
-}
-/* header img {
-
-} */
-
-a {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
+header
 
 
-h1 {
-	text-align: center;
-	font-size: 2.8rem;
-	text-shadow: 3px 3px 5px var(--accent2-color);
-    position: absolute;
-    top: 40%;
-    /* right: 5%; */
-    color: var(--secondary-color);
-    background: rgba(10, 110, 20, 0.5);
-    font-family: "Poppins", serif;
-    font-weight: 400;
-}
 
 
-article {
-    width: 80%;
-    height: 30%;
-    margin-left: 0.5%;
-    position: absolute;
-    background: none;
-    top: 53%;
-    background: var(--accent2-color);
-    opacity: 85%;
-    
-}
 
 
-h2 {
-    font-family: 'poppins';
-    color: var(--secondary-color);
-    font-size: 34px;
-}
-
-div.hero{
-    position: relative;
-    object-fit: cover;
-    margin: 10px;
-}
 
 
-article img {
-    border: 1px black;
-    float: right;
-    width: auto;
-    height: 90%;
-    opacity: 100%;
-    clear: both;
-}
 
-article p {
-    background: var(--accent2-color);
-    font-family: 'poppins';
-    font-size: 15px;
-    text-shadow: 3px 3px 5px var(--accent2-color);
-    color: white;
-}
- p {
-    font-family: "lato";
-    color: var(--secondary-color);
-    font-size: 20px;
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  /* Font things? */

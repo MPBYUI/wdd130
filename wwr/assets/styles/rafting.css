@@ -1,9 +1,9 @@
 :root {
-    
     --primary-color:#FFFAF2;
     --secondary-color:#000000;
     --accent1-color:#115AAE;
     --accent2-color: #9FC131;
+    --accent3-color: #F4630F;
 }
 
 * {
@@ -13,10 +13,36 @@
     max-width: 1080px;
 }
 
-header
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+  background-color: var(--accent2-color);
+}
 
+h1 {
+	font-size: 2rem;
+	font-family: Acme, Arial, sans-serif;
+}
 
-
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0;
+  font-family: "Poppins", serif;
+  /* border: 1px #000000; */
+  background-color: #9FC131;
+}
 
 
 

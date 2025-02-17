@@ -127,8 +127,8 @@ nav {
 }
 
 
-/* gid 2 rows top row text takes full space center it and then second row has 3 colums
- */
+/* About Us page History Element */
+
 .history {
   background-color: var(--secondary-color);
   display: grid;
@@ -142,8 +142,11 @@ nav {
   width: auto;
 }
 
+/* About Us page History Element */
 
-/* I don't know what this is doing but its making it work */
+
+/* About Us page Adventure Element */
+
 /* DO NOT TOUCH */
 .sectionimg {
   display: flex;
@@ -179,7 +182,7 @@ section div figure figcaption{
   font-family: "poppins";
 }
 
-
+/* About Us page Adventure Element */
 
 footer {
   display: grid;

@@ -15,26 +15,22 @@
 h1,h2 {
   font-family: 'poppins';
   color: white;
-  text-shadow: 2px 2px 2px grey;
   font-size: 2.1rem;
 }
 
 header a {
   font-family: 'lato';
   color: var(--accent2-color);
-  text-shadow: 2px 2px 2px grey;
   font-size: 1.5rem;
 }
 
 p {
   font-family: 'lato';
   color: white;
-  text-shadow: 2px 2px 2px grey;
   font-size: 1.5rem;
 }
 a {
   color: white;
-  text-shadow: 2px 2px 2px grey;
   font-size: 1.5rem;
 }
 a img {
@@ -222,7 +218,6 @@ section div figure figcaption{
   color: white;
   font-family: "poppins";
   font-size: 36px;
-  text-shadow: #ffffff63;
   
 }
 
@@ -264,7 +259,6 @@ legend {
   color: white;
   font-size: xx-large;
   text-align: left;
-  text-shadow: #ffffff63;
   
 }
 

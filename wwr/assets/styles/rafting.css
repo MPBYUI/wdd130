@@ -362,6 +362,12 @@ select {
 
 
 /* "Three Happy Looking Employees" */
+
+aside div h1 {
+  color:#4023e7;
+}
+
+
 .emppics {
   border:  15px transparent var(--accent4-color);
   border-radius: 15px;

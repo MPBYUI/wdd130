@@ -255,7 +255,7 @@ section div figure figcaption{
   font-size: 36px;
   
 }
-/* 
+
 /* Google Maps */
  .contactmap {
   display: flex;
@@ -263,8 +263,6 @@ section div figure figcaption{
   align-items: flex-start;
   padding: 5px;
 }
-
-
 
 /* Contact Form */
 
@@ -306,8 +304,6 @@ section div figure figcaption{
   text-align: left;;
 }
 
-
-
 .contactform input[type=text] {
 	appearance: none;
 	border: none;
@@ -319,9 +315,6 @@ section div figure figcaption{
   font-size: larger;
 }
 
-
-
-
 .contactform input[type="email"] {
 	appearance: none;
 	border: none;
@@ -332,8 +325,6 @@ section div figure figcaption{
 	color: #000;
   font-size: larger;
 }
-
-
 
 .contactform nput[type="checkbox"] {
   width: 22px;
@@ -365,10 +356,6 @@ section div figure figcaption{
 
 }
 
-
-
-
-
 .contactform button:hover {
   background-color: #3019b0;
 }
@@ -389,8 +376,6 @@ section div figure figcaption{
   grid-template-columns: 1fr 2fr;
   margin: 0.5rem 0;
 }
-
-
 
 /* "Three Happy Looking Employees" */
 
@@ -473,21 +458,11 @@ aside div h1 {
 }
 
 
-
 .welcome button:hover {
   background-color: #3019b0;
   transform: scale(1.1); 
 }
   
-
-
-
-
-
-.upcoming {
-  margin: 5px;
-}
-
 
 #homeadvh1 {
   text-align: center;
@@ -534,17 +509,11 @@ aside div h1 {
 }
 
 
-
 .homeadventure button:hover {
   background-color: #3019b0;
   transform: scale(1.1); 
 }
   
-
-
-
-
-
 
 .homehero {
   
@@ -697,8 +666,56 @@ aside div h1 {
   background-color: #3019b0;
 }
 
+/* trip page */
+
+h3 {
+  color: white;
+  font-size: xx-large;
+  font-family: "poppins";
+}
 
 
+.tripmain {
+  display: grid;
+  grid-template-columns:3fr 1fr;
+}
+
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: xx-large;
+  letter-spacing: 1px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: var(--accent4-color);
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgba(64,35,231,0.1);
+}
 
 footer {
   display: grid;

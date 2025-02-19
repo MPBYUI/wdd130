@@ -642,7 +642,7 @@ aside div h1 {
 
 
 
-.homeform nput[type="checkbox"] {
+.homeform input[type="checkbox"] {
   width: 22px;
   height: 22px;
   vertical-align: bottom;
@@ -716,59 +716,8 @@ footer nav {
   gap: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
  /* Font things? */
 
- .lato-thin {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  .lato-regular {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .lato-thin-italic {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  .lato-regular-italic {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  .lato-thin {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  .lato-regular {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .lato-thin-italic {
-    font-family: "Lato", serif;
-    font-weight: 100;
-    font-style: italic;
-  }
-  .lato-regular-italic {
-    font-family: "Lato", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
   
   .poppins-thin {
     font-family: "Poppins", serif;

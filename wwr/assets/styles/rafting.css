@@ -5,11 +5,35 @@
     --accent2-color: #FFFAF2;
     --accent3-color: #000000;
     --accent4-color: #4023e7;
+    --background: rgba(64,35,231,0.5);
 }
 
 * {
-    margin: 5px;
     text-decoration: none;
+}
+
+a.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4023e7;
+  color: white;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: "poppins";
+  transition: all .2s ease-in-out; 
+}
+
+a.button:hover {
+  background-color: #3019b0;
+  transform: scale(1.1);
+}
+
+figure {
+  transition: all .2s ease-in-out; 
+}
+
+figure:hover {
+  transform: scale(1.1); 
 }
 
 h1,h2 {
@@ -47,6 +71,7 @@ a img {
   margin: 10px;
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .hero img {
@@ -58,7 +83,7 @@ a img {
 }
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 70px;
   margin: 0.5em;
   padding: 15px;
   width: 100%;
@@ -66,9 +91,9 @@ a img {
   background-color: rgba(64,35,231,0.5);
   position: absolute;
   top: 10px;
-  
   overflow: hidden;
   z-index: 1;
+  font-family: "Indie Flower";
 }
 
 .hero article img {
@@ -129,7 +154,7 @@ nav {
   justify-content: space-around;
   
 }
-
+ 
 
 /* About Us page History Element */
 
@@ -140,11 +165,13 @@ nav {
   grid-template-columns: 1fr .5fr 1fr;
   grid-auto-flow: row dense;
   border-radius: 15px;
+  padding: 10px;
 }
 
 .historymiddle {
   height: fit-content;
   width: auto;
+  border-radius: 15px;
 }
 
 /* About Us page History Element */
@@ -167,6 +194,7 @@ grid-template-rows: 0.2fr 1.8fr;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 grid-auto-flow: row dense;
 border-radius: 15px;
+margin: 5px;
 }
 
 .sectionheader {
@@ -178,9 +206,16 @@ border-radius: 15px;
 .sectionimg > figure > img {
   grid-row: span 1;
   grid-column: span 6;
-  width: 350px;
+  width: 295px;
   height: auto;
+  border-radius: 15px;
+  transition: all .2s ease-in-out; 
 } 
+
+
+.sectionimg > figure > img:hover {
+  transform: scale(1.1); 
+}
 
 section div figure figcaption{
   font-size: 30px;
@@ -220,22 +255,23 @@ section div figure figcaption{
   font-size: 36px;
   
 }
-
+/* 
 /* Google Maps */
-.contactmap {
-  /* display: flex;
+ .contactmap {
+  display: flex;
   flex-wrap: nowrap;
-  align-items: flex-start; */
+  align-items: flex-start;
+  padding: 5px;
 }
 
 
 
-/* Form */
+/* Contact Form */
 
 
-form {
+.contactform {
   width: 45%;
-  height: 70%;
+  height: auto;
   margin: 0 auto;
   padding: 3px;
   border:  15px transparent var(--accent4-color);
@@ -245,7 +281,7 @@ form {
   font-family: "poppins";
 }
 
-fieldset {
+.contactform fieldset {
   display: grid;
   grid-gap: 3px;
   margin: 3px;
@@ -254,7 +290,7 @@ fieldset {
 }
 
 
-legend {
+.contactform legend {
   margin-bottom: 5px;
   color: white;
   font-size: xx-large;
@@ -262,7 +298,7 @@ legend {
   
 }
 
-label {
+.contactform label {
   margin-bottom: 5px;
   margin-left: 5px;
   color: white;
@@ -272,7 +308,7 @@ label {
 
 
 
-input[type=text] {
+.contactform input[type=text] {
 	appearance: none;
 	border: none;
 	outline: none;
@@ -286,7 +322,7 @@ input[type=text] {
 
 
 
-input[type="email"] {
+.contactform input[type="email"] {
 	appearance: none;
 	border: none;
 	outline: none;
@@ -299,14 +335,14 @@ input[type="email"] {
 
 
 
-input[type="checkbox"] {
+.contactform nput[type="checkbox"] {
   width: 22px;
   height: 22px;
   vertical-align: bottom;
   color: var(--accent4-color);
 }
 
-textarea {
+.contactform textarea {
 	appearance: none;
 	border: none;
 	outline: none;
@@ -318,30 +354,25 @@ textarea {
   width: 90%;
 }
 
-button {
+.contactform button {
   padding: 10px 20px;
   border-radius: 5px;
   background-color: #4023e7;
   color: white;
   cursor: pointer;
-  font-size: xx-large;
+  font-size: x-large;
   font-family: "poppins";
+
 }
 
 
-button:hover {
+
+
+
+.contactform button:hover {
   background-color: #3019b0;
 }
   
-select {
-  margin-bottom: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  color: #4023e7;
-  font-size: large;
-  
-}
-
 
 .form-item {
   display: grid;
@@ -411,10 +442,260 @@ aside div h1 {
 
 
 
+/* Home Page */
+
+.welcome {
+  margin: 10px;
+  background-color: var(--background);
+  border-radius: 15px;
+  display: grid;
+  text-align: center;
+
+}
+
+.welcome h2 {
+  text-align: center;
+  color: var(--accent4-color);
+  font-family: "poppins";
+  font-size: 40px;
+}
+
+
+.welcome button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4023e7;
+  color: white;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: "poppins";
+  transition: all .2s ease-in-out; 
+}
+
+
+
+.welcome button:hover {
+  background-color: #3019b0;
+  transform: scale(1.1); 
+}
+  
 
 
 
 
+
+.upcoming {
+  margin: 5px;
+}
+
+
+#homeadvh1 {
+  text-align: center;
+  color: var(--accent4-color);
+  font-family: "Indie Flower";
+  font-size: 50px;
+}
+#homenewsh1 {
+  text-align: center;
+  color: var(--accent4-color);
+  font-family: "Indie Flower";
+  font-size: 50px;
+}
+
+
+.homeadventure {
+  margin: 10px;
+  display: grid;
+  /* grid-template-rows: 1fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--background);
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+
+.homeadventure div figure img{
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.homeadventure button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4023e7;
+  color: white;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: "poppins";
+  transition: all .2s ease-in-out; 
+
+}
+
+
+
+.homeadventure button:hover {
+  background-color: #3019b0;
+  transform: scale(1.1); 
+}
+  
+
+
+
+
+
+
+.homehero {
+  
+  overflow-y: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.homehero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  overflow: hidden;
+  border-radius: 50px;
+
+}
+
+.homehero h1 {
+  font-size: 10rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  overflow: hidden;
+  z-index: 1;
+  font-family: "Indie Flower";
+}
+
+
+
+
+.homeform {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 3px;
+  border:  15px transparent var(--accent4-color);
+  border-radius: 15px;
+  background-color: rgba(64,35,231,0.5);
+  display: grid;
+  font-family: "poppins";
+}
+
+.homeform fieldset {
+  display: grid;
+  grid-gap: 3px;
+  margin: 3px;
+  border: 5px transparent rgba(64,35,231) ;
+  padding: 3px;
+}
+
+
+.homeform legend {
+  margin-bottom: 5px;
+  color: white;
+  font-size: xx-large;
+  text-align: left;
+  
+}
+
+.homeform label {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: white;
+  font-size: xx-large;
+  text-align: left;;
+}
+
+
+
+.homeform input[type=text] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #4023e7;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #000;
+  font-size: larger;
+}
+
+
+
+
+.homeform input[type="email"] {
+	appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #4023e7;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+	color: #000;
+  font-size: larger;
+}
+
+
+
+.homeform nput[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+  color: var(--accent4-color);
+}
+
+.homeform button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4023e7;
+  color: white;
+  cursor: pointer;
+  font-size: xx-large;
+  font-family: "poppins";
+}
+
+
+.tripnews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--background);
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tripnews img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.tripnews button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "poppins";
+}
+
+
+.tripnews figure {
+  width: fit-content;
+  height: auto;
+  border-radius: 30px;
+}
+
+.tripnews button:hover {
+  background-color: #3019b0;
+}
 
 
 
@@ -426,8 +707,24 @@ footer {
   justify-items: center;
   background-color: var(--accent1-color);
   border-radius: 15px;
+  padding: 15px;
   /* z-index: 0; */
 }
+
+
+footer nav {
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 
  /* Font things? */
 
@@ -436,46 +733,36 @@ footer {
     font-weight: 100;
     font-style: normal;
   }
-  
   .lato-regular {
     font-family: "Lato", serif;
     font-weight: 400;
     font-style: normal;
   }
-  
   .lato-thin-italic {
     font-family: "Lato", serif;
     font-weight: 100;
     font-style: italic;
   }
-  
   .lato-regular-italic {
     font-family: "Lato", serif;
     font-weight: 400;
     font-style: italic;
   }
-
-
-
-
   .lato-thin {
     font-family: "Lato", serif;
     font-weight: 100;
     font-style: normal;
   }
-  
   .lato-regular {
     font-family: "Lato", serif;
     font-weight: 400;
     font-style: normal;
   }
-  
   .lato-thin-italic {
     font-family: "Lato", serif;
     font-weight: 100;
     font-style: italic;
   }
-  
   .lato-regular-italic {
     font-family: "Lato", serif;
     font-weight: 400;
@@ -483,4 +770,34 @@ footer {
   }
   
   
+  .poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+
+  .indie-flower-regular {
+    font-family: "Indie Flower", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
   
